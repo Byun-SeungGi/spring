@@ -5,8 +5,8 @@ public class MemberServiceImpl implements MemberSerivce {
     private final MemberRepository memberRepository = new MemoryMemberRepository();
 
     @Override
-    public void Join(Member member) {
-
+    public void join(Member member) {
+        memberRepository.save(member);
     }
 
     @Override
